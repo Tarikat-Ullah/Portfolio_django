@@ -1,0 +1,12 @@
+id = "portfolio-django"
+kind = "web"
+title = "Django Portfolio"
+version = "1"
+
+[[services]]
+name = "web"
+localPort = 3000
+paths = ["/"]
+
+[services.dev]
+command = "bash artifacts/portfolio/start.sh"
